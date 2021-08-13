@@ -433,6 +433,7 @@ namespace SharpRDP
 
         private void KeyCodes()
         {
+            // https://kbdlayout.info/kbdus/overview+scancodes
             keycode["Esc"] = new Code(new[] { false, true }, new[] { 0x01 });
             keycode["Enter+down"] = new Code(new[] { false }, new[] { 0x1c });
             keycode["Enter+up"] = new Code(new[] { true }, new[] { 0x1c });
@@ -524,6 +525,7 @@ namespace SharpRDP
             keycode["\\"] = new Code(new[] { false, true }, new[] { 0x2b });
             keycode[";"] = new Code(new[] { false, true }, new[] { 0x27 });
             keycode["'"] = new Code(new[] { false, true }, new[] { 0x28 });
+            keycode["="] = new Code(new[] { false, true }, new[] { 0x0d });
 
             keycode["\""] = new Code(new[] { false, false, true, true }, new[] { 0x2a, 0x28 });
             keycode[":"] = new Code(new[] { false, false, true, true }, new[] { 0x2a, 0x27 });
